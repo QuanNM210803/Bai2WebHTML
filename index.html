@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý nhân viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản lý nhân viên</h1>
+        <button onclick="createEmployees()">Tạo danh sách nhân viên</button>
+        <button onclick="showEmployeeList()">Hiển thị danh sách</button>
+        <div id="employee-list"></div>
+        <div id="update-form" style="display: none;">
+            <h2>Cập nhật thông tin nhân viên</h2>
+            <input type="text" id="employee-id" placeholder="Nhập ID nhân viên">
+            <button onclick="updateEmployee()">Cập nhật</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
